@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114306992-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-114306992-1');
+	</script>
+    <meta name="description" content="Just a personal website of Siddharth Maurya."/>
+	<title>Siddharth Maurya</title>
+	<link href="logo.png" rel="shortcut icon" type="image/x-icon">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap & jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- custom css and scripts-->
+	<script src="title.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="loader.css">
+	<script src="loader.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="customStyle.css">
+	<link rel="stylesheet" type="text/css" href="title.css">
+	<script src="customScripts.js" type="text/javascript"></script>
+	<style type="text/css">
+		body
+		{
+			background-color: #3d3d3d;
+		}
+	</style>
+
+</head>
+<body onload="myFunction()" style="margin:0;">	
+	<div class="loaderContainer">
+		<div id="loader"></div>
+	</div>
+	<div class="container-fluid animate-bottom" id="myDiv" style="display:none;">
+		<div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="#" style="font-weight: 900; text-shadow: 2px 2px 10px black;" id="test" onclick="closeNav()">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+	  		</div>
+	  	</div>
+		<div class="jumbotron2">
+			<div class="hamburger animated bounceInRight" onclick="openNav()">
+				&#9776;
+			</div>
+			<img data-toggle="tooltip" data-placement="right" title="Hi, I'm Sid, now take this cursor off me!" src="prof.jpg" class="img-circle dp animated bounceInDown">
+			<br>
+			<div class="type-js headline">
+  				<h1 class="text-js">Siddharth Maurya</h1>
+  			</div>
+  			<br>
+			<!-- <h1 class="animated bounceInLeft">Siddharth Maurya</h1> -->
+			<p class="animated bounceInRight">this is just my personal website ;)</p>
+		</div>
+		<div class="parallax">
+			<h1 class="sentence">
+				hello :D
+			</h1>
+		</div>
+	</div>
+	<footer class="footer" id="myDiv2" style="display: none;">
+    	<div class="container" style="padding-top: 5px; text-align: center;">
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://www.facebook.com/savvysiddharth" class="fa fa-facebook animated bounceInLeft" title="facebook @savvysiddharth"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://twitter.com/savvysiddharth" class="fa fa-twitter animated bounceInLeft" title="twitter @savvysiddharth"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://github.com/savvysiddharth" class="fa fa-github animated bounceInUp" title="GitHub @savvysiddharth"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://www.linkedin.com/in/savvysiddharth/" class="fa fa-linkedin-square animated bounceInRight" title="LinkedIn!"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://www.instagram.com/savvysiddharth" class="fa fa-instagram animated bounceInRight" title="Instagram @savvysiddharth"></a>
+		</div>
+    </footer>
+</body>
+</html>

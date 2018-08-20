@@ -1,0 +1,382 @@
+/*for my pic*/
+.dp
+{
+  box-shadow: 0px 0px 30px black;
+  transition: all 1s;
+  width: 250px;
+}
+
+.dp:hover
+{
+	box-shadow: 0px 0px 5px black;
+	transition: all 0.5s;
+}
+
+.dp:active
+{
+  transition: all 0.2s;
+  box-shadow: 0px 0px 0px black;
+}
+
+/*for jumbotron*/
+.jumbotron
+{
+  text-align: center;
+  border-radius: 0;
+}
+
+.jumbotron2
+{
+  width: 100%;
+  text-align: center;
+  color: #efefef;
+  background-color: #3d3d3d;
+  padding:25px 10px;
+}
+
+.jumbotron2 h1
+{
+  font-size: 8vw;
+}
+
+.jumbotron2 p
+{
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+
+.container-fluid
+{
+  padding: 0 !important;
+}
+
+.container
+{
+	color: #3d3d3d;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 540px)
+{
+    .container 
+    {
+        font-size: 15px;
+    }
+}
+
+/*font awesome css*/
+.fa {
+  padding: 10px 7px;
+  font-size: 25px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 9px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px black;
+  transition: all 0.8s;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+    transition: all 0.8s;
+}
+
+.fa:active
+{
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.fa:visited
+{
+  text-decoration: none !important;
+  opacity: 1;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-github {
+  background: #24292e;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google-plus {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin-square {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #fbad50;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+/*footer css*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 62px !important;
+}
+.footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 62px;
+	background-color: rgba(61,61,61,0.8);
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    /*background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(61,61,61,0.94); /* Black w/opacity */
+    backdrop-filter: blur(5px); /*works only on Safari iOS 9 and above*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden; /*disables vertical scroll*/
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    margin: auto;
+    width: 100%; /* 100% width */
+    text-overflow: clip;
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #8e8e8e;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay a:hover
+{
+	white-space:nowrap;
+	text-shadow:0px 0px 10px white;
+	transition: all 0.5s;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+	color: white;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    font-size: 60px;
+    transition: all 0.5s;
+}
+
+.closebtn:hover
+{
+	text-shadow:0px 0px 20px white;
+	transition: all 0.5s;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+.hamburger
+{
+	width: 50px;
+	border-radius: 10px;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	font-size: 35px;
+	transition: all 0.5s;
+	text-decoration: none;
+	color: white;
+	background-color: rgba(61,61,61,0.7);
+}
+
+.hamburger:hover
+{
+	text-shadow:0px 0px 20px white;
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+/*for parallax effect*/
+.parallax2
+{
+	min-height: 400px;
+	height: 100%;
+	background-position: center !important;
+	/*background-repeat: no-repeat;*/
+	background-size: cover !important;
+	background-attachment: fixed !important;
+	text-align: top;
+	color: white;
+	padding-top: 10%;
+}
+
+.parallax
+{
+	text-align: center;
+	padding: 50px 10px;
+	color: white;
+	/*height: 30px;*/
+	background: #3d3d3d !important;
+}
+
+.parallax h1
+{
+	font-size: 55px;
+}
+
+@media screen and (max-device-width: 540px) {
+    .parallax h1 {
+        font-size: 50px;
+    }
+}
+
+.tooltip-inner
+{
+	font-size: 20px;
+	max-width: 350px;
+}
+
+::selection
+{
+	color: white;
+	background: #636363;
+}
+
+#downarrow
+{
+  font-size: 150px;
+}
+
+#secret
+{
+  color: rgb(61, 61, 61) !important;
+}
