@@ -100,49 +100,6 @@
     </p>
     <hr>
 
-    <h6>(with array implementation)</h6>
-    <h3>Pseudocode</h3>
-    <!-- Pseudocode from https://www.tutorialspoint.com/data_structures_algorithms/stack_algorithm.htm -->
-    <code>
-      <pre class="code-block">
-        begin procedure peek
-          return stack[top]
-        end procedure
-
-        begin procedure isfull
-          if top equals to MAXSIZE
-              return true
-          else
-              return false
-          endif
-        end procedure
-
-        begin procedure isempty
-          if top less than 1
-              return true
-          else
-              return false
-          endif
-        end procedure
-
-        begin procedure push: stack, data
-          if stack is full
-              return null
-          endif
-          top ← top + 1
-          stack[top] ← data
-        end procedure
-
-        begin procedure pop: stack
-          if stack is empty
-              return null
-          endif
-          data ← stack[top]
-          top ← top - 1
-          return data
-        end procedure
-      </pre>
-    </code>
     <a href="index.html"><button class="btn btn-info">Go back to home</button></a>
   </div>
 </body>
