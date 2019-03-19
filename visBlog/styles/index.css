@@ -48,3 +48,11 @@ body {
 .fadeIn {
   animation-delay: 0.5s;
 }
+
+.card {
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+  margin : 4px 0px 4px 0px;
+  width: 18rem;
+  border-radius: 15px;
+}
