@@ -2,11 +2,20 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: GidoleRegular;
+  src: url(../../fonts/Gidole-Regular.ttf);
+}
+
 body {
   background-image: url(./abstract.jpg); /* Image credits : @byrawpixel (Instagram) */
   background-size: cover;
   background-attachment: fixed;
   color: white;
+}
+
+body * {
+  font-family: GidoleRegular;
 }
 
 .btn {

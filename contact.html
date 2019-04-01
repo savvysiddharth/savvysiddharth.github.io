@@ -29,7 +29,17 @@
 	<link rel="stylesheet" type="text/css" href="loader.css">
 	<script src="loader.js" type="text/javascript"></script>
 	<link rel="stylesheet" type="text/css" href="customStyle.css">
-	<script src="customScripts.js" type="text/javascript"></script>
+  <script src="customScripts.js" type="text/javascript"></script>
+
+  <style>
+    @font-face {
+      font-family: GidoleRegular;
+      src: url(fonts/Gidole-Regular.ttf);
+    }
+    .container-fluid * {
+      font-family: GidoleRegular;
+    }
+  </style>
 </head>
 <body>
 	<div class="container-fluid animate-bottom" id="myDiv" style="display:block;">
@@ -57,8 +67,7 @@
 		<div class="parallax">
 			<h3>That footer got few links...</h3>
       <h3>...and here's my email</h3>
-      <h4>savvysiddharth@gmail.com</h4>
-			<!-- <h1 id="downarrow">&darr;</h1> -->
+      <h4><a style="color:white" href="mailto:savvysiddharth@gmail.com">savvysiddharth@gmail.com</a></h4>
 		</div>
 	</div>
 	<footer class="footer" id="myDiv2">

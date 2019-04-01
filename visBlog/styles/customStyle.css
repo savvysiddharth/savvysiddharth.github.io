@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: GidoleRegular;
+  src: url(../../fonts/Gidole-Regular.ttf);
+}
+
 body {
   background-image: url(./abstract.jpg); /* Image credits : @byrawpixel (Instagram) */
   background-size: cover;
@@ -9,6 +14,9 @@ body {
   color: white;
 }
 
+body * {
+  font-family: GidoleRegular;
+}
 .btn {
   padding: 7px 20px;
   border-radius: 100px;
@@ -61,6 +69,8 @@ body {
 
 .code-block {
   color: lightpink;
+  font-size: 14px;
+  font-family: monospace !important;
 }
 
 @media only screen and (max-width: 600px) {

@@ -34,11 +34,19 @@
 	<link rel="stylesheet" type="text/css" href="customStyle.css">
 	<link rel="stylesheet" type="text/css" href="title.css">
 	<script src="customScripts.js" type="text/javascript"></script>
-	<style type="text/css">
-		body
-		{
-			background-color: #3d3d3d;
-		}
+  <style type="text/css">
+    @font-face {
+      font-family: GidoleRegular;
+      src: url(fonts/Gidole-Regular.ttf);
+    }
+
+    body {
+      background-color: #3d3d3d;
+    }
+
+    .container-fluid * {
+      font-family: GidoleRegular;
+    }
 	</style>
 
 </head>
@@ -69,8 +77,7 @@
   				<h1 class="text-js">Siddharth Maurya</h1>
   			</div>
   			<br>
-			<!-- <h1 class="animated bounceInLeft">Siddharth Maurya</h1> -->
-			<p class="animated bounceInRight">this is just my personal website ;)</p>
+			<p class="animated bounceInRight"><span>this is just my personal website ;)</span></p>
 		</div>
 	</div>
 	<footer class="footer" id="myDiv2" style="display: none;">
