@@ -19,7 +19,7 @@ body * {
 }
 
 .btn {
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 100px;
   margin: 10px;
 }
@@ -38,7 +38,7 @@ body * {
 }
 
 .container {
-  margin: 70px auto 10px auto !important;
+  margin: 85px auto 10px auto !important;
   background-color: rgba(0,0,0,0.9);
   padding: 30px;
   border-radius: 10px;
@@ -62,6 +62,18 @@ body * {
   background-color: rgba(0,0,0,0.5);
   display: inline-block;
   margin : 4px 0px 4px 0px;
-  width: 18rem;
   border-radius: 15px;
+}
+
+.content-desktop {
+  display: block;
+}
+
+.content-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .content-desktop {display: none;}
+  .content-mobile {display: block;}
 }
