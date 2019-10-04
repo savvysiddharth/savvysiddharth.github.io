@@ -2,12 +2,11 @@ let barGroups = []; //bar groups
 
 let balls = []; //all balls alive
 
-const TOTAL_BALL_POPULATION = 20;
+const TOTAL_BALL_POPULATION = 30;
 
 let ANIMATION_SPEED = 1;
 
 class StatusBoard {
-
   constructor() {
     this.best = 0; //AlltimeBest
     this.gen = 0;
@@ -16,37 +15,41 @@ class StatusBoard {
 
   updateBest(score) {
     this.best = score;
-    let board = document.querySelector("#s1");
-    board.innerHTML = "Best overall : " + this.best;
   }
 
   updateGeneration() {
     this.gen++;
-    let board = document.querySelector("#s2");
-    board.innerHTML = "Generation : " + this.gen;
   }
 
   updateCurrent(score) {
     this.curr = score;
-    let board = document.querySelector("#s3");
-    board.innerHTML = "Current score : " + this.curr;
     if(score > this.best) {
       this.updateBest(score);
     }
   }
-
 }
 
 let status = new StatusBoard();
+
+function print_status(val, pos) {
+  sketch.textSize(18);
+  sketch.fill(255);
+  if(pos == 1) {
+    sketch.text("Current score : "+val, 10, 20);
+  } else if(pos == 2) {
+    sketch.text("Best yet : "+val, 10, 45);
+  } else if(pos == 3) {
+    sketch.text("Generation : "+val, 10, 70);
+  }
+}
 
 let gameOver = false;
 let gameLevel = 0;
 let previousGen = []; //dead balls
 
-let highScore = 0; //highScore of current generation
+let highScore = 0; //highScore of *current* generation
 
 let nesketch = (p) => {
-
   p.setup = () => {
     p.noStroke();
     p.createCanvas(world.width,world.height);
@@ -62,13 +65,16 @@ let nesketch = (p) => {
     }
 
     for(ball of balls) {
-      ball.x = p.random(10,world.width-10);
+      ball.x = p.random(10, world.width-10);
     }
   };
 
   p.draw = () => {
     p.frameRate(60);
     p.background(150);
+    print_status(status.curr, 1);
+    print_status(status.best, 2);
+    print_status(status.gen, 3);
 
     for(let ITR=0 ; ITR < ANIMATION_SPEED ; ITR++) {
       for(j in barGroups) {
@@ -154,12 +160,13 @@ let nesketch = (p) => {
         status.updateCurrent(0);
         status.updateGeneration();
 
-
         //GET NEW GENERATION
         balls = nextGeneration(previousGen);
         previousGen = [];
       }
     }
+
+
 
     for(ball of balls) {
       ball.draw();
@@ -170,8 +177,8 @@ let nesketch = (p) => {
         bar.draw();
       }
     }
-  }
+  };
 
-}
+};
 
 let sketch = new p5(nesketch,'nesketch');
