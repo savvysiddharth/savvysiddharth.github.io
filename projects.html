@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114306992-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-114306992-1');
+	</script>
+    <meta name="description" content="Just a personal website of Siddharth Maurya."/>
+	<title>Projects</title>
+	<link href="logo.png" rel="shortcut icon" type="image/x-icon">
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Bootstrap & jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!-- custom css and scripts-->
+	<link rel="stylesheet" type="text/css" href="animate.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="loader.css">
+	<script src="loader.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="customStyle.css?v=1.2">
+  <script src="customScripts.js" type="text/javascript"></script>
+
+  <style>
+    @font-face {
+      font-family: GidoleRegular;
+      src: url(fonts/Gidole-Regular.ttf);
+    }
+    .container-fluid * {
+      font-family: GidoleRegular;
+    }
+
+    .container-fluid {
+      background-color: rgb(231, 231, 231);
+    }
+
+    body {
+      /* Margin bottom by footer height */
+      margin-bottom: 0px !important;
+    }
+
+    .footer {
+      position: relative;
+    }
+
+  </style>
+</head>
+<body>
+	<div class="container-fluid animate-bottom" id="myDiv" style="display:block;">
+		<div id="myNav" class="overlay">
+			<!-- Button to close the overlay navigation -->
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+			<!-- Overlay content -->
+			<div class="overlay-content">
+				<a href="index.html" id="test">Home</a>
+				<a target="_blank" href="https://drive.google.com/file/d/1hmGbc4sEG4T8H-kfQbtYma8whjUx6oeO/view">Résumé</a>
+				<a href="contact.html">Contact</a>
+        <a href="#" style="font-weight: 900; text-shadow: 2px 2px 10px black;" onclick="closeNav()">Projects</a>
+	  		</div>
+	  	</div>
+	  	<!-- &#9776; -->
+	  	<div class="jumbotron2">
+			<div class="hamburger animated bounceInRight" onclick="openNav()">
+				&#9776;
+			</div>
+			<br>
+			</p>
+			<h1 class="">Projects</h1>
+    </div>
+    <div class="container">
+
+      <div class="project-box animated slideInLeft">
+        <div class="title">{ mini-ANN.js }</div>
+        <div class="description">
+            mini-ANN.js is javascript library which provides basic Artificial Neural Network (ANN) functionalities which includes ability to create multilayer architecture, feed forward operation, training through backpropagation and some functions for genetic algorithm.
+        </div>
+        <a target="_blank" href="https://github.com/savvysiddharth/mini-ANN-js" class="project-link">Project Code</a>
+      </div>
+
+      <div class="project-box animated slideInRight">
+        <div class="title">{ Rangoli Maker }</div>
+        <div class="description">
+            Converts your random doodles to awesome rangolis!
+        </div>
+        <a target="_blank" href="https://github.com/savvysiddharth/rangoli-maker" class="project-link">Project Code</a>
+        <a target="_blank" href="https://savvysiddharth.github.io/rangoli-maker/" class="project-link">Run Project</a>
+      </div>
+
+      <div class="project-box">
+        <div class="title">{ Escape Jump Game }</div>
+        <div class="description">
+            A simple game where you jump to escape and survive to save yourself from getting crushed by pipe closing at random positions, written using p5.js
+        </div>
+        <a target="_blank" href="https://github.com/savvysiddharth/escape-jump" class="project-link">Project Code</a>
+        <a target="_blank" href="https://savvysiddharth.github.io/escape-jump/" class="project-link">Run Project</a>
+      </div>
+
+      <div class="project-box">
+        <div class="title">{ Neuroevolution on Escape Jump }</div>
+        <div class="description">
+          Evolving neural network to make computer learn the gameplay for the game itself.
+        </div>
+        <a target="_blank" href="https://github.com/savvysiddharth/NE-escape-jump" class="project-link">Project Code</a>
+        <a target="_blank" href="https://savvysiddharth.github.io/visualisations-blog/neuroevolve.html" class="project-link">Run Project</a>
+      </div>
+
+      <div class="project-box">
+        <div class="title">{ Visualisations Blog }</div>
+        <div class="description">
+            Showcases visualisations of a few Data Structures and Algorithms, for examples Stack data structure and search algorithms.
+        </div>
+        <a target="_blank" href="https://github.com/savvysiddharth/visualisations-blog" class="project-link">Project Code</a>
+        <a target="_blank" href="https://savvysiddharth.github.io/visualisations-blog/" class="project-link">Run Project</a>
+      </div>
+
+      <div class="project-box">
+        <div class="title">{ flappyball Game }</div>
+        <div class="description">
+            A flappybird game clone written using p5.js graphics library.
+        </div>
+        <a target="_blank" href="https://github.com/savvysiddharth/flappyball-p5js" class="project-link">Project Code</a>
+        <a target="_blank" href="https://savvysiddharth.github.io/liveTest/flappyball-p5js/" class="project-link">Run Project</a>
+      </div>
+
+      <div class="project-box">
+        <div class="title">{ Attendance Management }</div>
+        <div class="description">
+          Attendance management web application which uses Google Firebase Cloud Firestore as backend.
+        </div>
+        <a target="_blank" href="https://github.com/iiitkottayam/attendance-firebase" class="project-link">Project Code</a>
+      </div>
+
+      <div class="project-box">
+        <div class="title">{ Pong Game }</div>
+        <div class="description">
+          Two player retro game called "Pong", recreated in C++ using SDL2 Library.
+        </div>
+        <a target="_blank" href="https://github.com/savvysiddharth/pong-game-sdl2" class="project-link">Project Code</a>
+      </div>
+
+		</div>
+	</div>
+	<footer class="footer" id="myDiv2">
+    	<div class="container_null" style="padding-top: 5px; text-align: center;">
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://www.facebook.com/savvysiddharth" class="fa fa-facebook animated bounceInLeft" title="facebook @savvysiddharth"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://twitter.com/savvysiddharth" class="fa fa-twitter animated bounceInLeft" title="twitter @savvysiddharth"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://github.com/savvysiddharth" class="fa fa-github animated bounceInUp" title="GitHub @savvysiddharth"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://www.linkedin.com/in/savvysiddharth/" class="fa fa-linkedin-square animated bounceInRight" title="LinkedIn!"></a>
+    	<a target="_blank" data-toggle="tooltip" data-placement="top" href="https://www.instagram.com/savvysiddharth" class="fa fa-instagram animated bounceInRight" title="Instagram @savvysiddharth"></a>
+		</div>
+    </footer>
+</body>
+</html>

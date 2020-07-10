@@ -1,5 +1,6 @@
 a,a:hover {
-  color:#9fd2ff;
+  text-decoration: none;
+  /* color:#9fd2ff; */
   font-size: 22px;
 }
 
@@ -8,7 +9,7 @@ a,a:hover {
 {
   box-shadow: 0px 0px 30px black;
   transition: all 1s;
-  width: 250px;
+  width: 200px;
 }
 
 .dp:hover
@@ -222,14 +223,14 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 62px !important;
+  margin-bottom: 70px !important;
 }
 .footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 	/* Set the fixed height of the footer here */
-	height: 62px;
+	height: 70px;
 	background-color: rgba(61,61,61,0.8);
 }
 
@@ -384,4 +385,65 @@ body {
 #secret
 {
   color: rgb(61, 61, 61) !important;
+}
+
+
+.project-box {
+  width: 90%;
+  background-color: #5c5c5c;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+  border-radius: 10px;
+  display: block;
+}
+
+.project-box .title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.project-box .description {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.project-box .project-link {
+  font-size: 17px;
+  text-decoration: none;
+  background-color: rgb(184, 184, 184);
+  padding: 5px 12px;
+  margin-right: 5px;
+  color: black;
+  border-radius: 100px;
+  transition: all 0.4s;
+}
+
+.project-box .project-link:hover {
+  background-color: white;
+}
+
+.hero-text {
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 2px solid white;
+  border-radius: 100px;
+  color: white;
+  transition: all 0.4s;
+}
+
+.hero-btn:hover {
+  text-decoration: none;
+  color: rgb(61,61,61);
+  background-color: white;
+}
+
+.hero-btn:visited {
+  text-decoration: none;
+  /* color: white; */
 }
