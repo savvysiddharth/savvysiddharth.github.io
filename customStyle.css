@@ -1,7 +1,9 @@
+a {
+  font-size: 22px;
+}
+
 a,a:hover {
   text-decoration: none;
-  /* color:#9fd2ff; */
-  font-size: 22px;
 }
 
 /*for my pic*/
@@ -81,14 +83,16 @@ a,a:hover {
   text-decoration: none;
   margin: 5px 9px;
   border-radius: 50%;
-  box-shadow: 0px 0px 2px black;
+  /* box-shadow: 0px 0px 2px black; */
+  border: solid rgba(255, 255, 255, 0) 2px;
   transition: all 0.8s;
 }
 
 .fa:hover {
     text-decoration: none;
     color: white;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px rgb(99, 99, 99);
+    border: solid white 2px;
     transition: all 0.8s;
 }
 
@@ -418,6 +422,15 @@ body {
   color: black;
   border-radius: 100px;
   transition: all 0.4s;
+  position: relative;
+}
+
+.project-link span {
+  font-size: 20;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-40%);
 }
 
 .project-box .project-link:hover {

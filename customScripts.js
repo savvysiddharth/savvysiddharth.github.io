@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
      $('[data-toggle="tooltip"]').hover(function (){
-     	$(this).next().addClass("animated jello");               
+     	// $(this).next().addClass("animated jello");               
     });
 });
 
